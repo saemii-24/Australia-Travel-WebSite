@@ -1,7 +1,6 @@
 $(function () {
   $(window).scroll(function () {
     let wdb = $(this).scrollTop();
-    console.log(wdb);
 
     if (wdb < 450) {
       if (window.matchMedia("(min-width:1200px)").matches) {

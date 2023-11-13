@@ -89,7 +89,7 @@
     width: 1200px;
     height: 600px;
     margin: 0 auto;
-    background-image: url(../../images/sub2/fixed_main.jpg);
+    background-image: url('../../../images/sub2/fixed_main.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
