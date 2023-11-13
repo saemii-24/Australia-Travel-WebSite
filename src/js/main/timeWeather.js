@@ -98,7 +98,6 @@ async function weather(cityId) {
       //나라를 판별한다.
       //판별된 나라는 innerText의 기준이 된다.
       let country = data.sys.country;
-      console.log(country);
       switch (country) {
         case "KR":
           country = "korea";
