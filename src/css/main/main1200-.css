@@ -196,22 +196,22 @@
 }
 
 .main__bg--first{
-    background-image: url('../../images/main/main_1.jpeg');
+    background-image: url('../../../images/main/main_1.jpeg');
 }
 .main__bg--second{
-    background-image: url('../../images/main/main_2.jpeg');
+    background-image: url('../../../images/main/main_2.jpeg');
 }
 .main__bg--third{
-    background-image: url('../../images/main/main_3.jpeg');
+    background-image: url('../../../images/main/main_3.jpeg');
 }
 .main__bg--fourth{
-    background-image: url('../../images/main/main_4.jpeg');
+    background-image: url('../../../images/main/main_4.jpeg');
 }
 .main__bg--fifth{
-    background-image: url('../../images/main/main_5.jpeg');
+    background-image: url('../../../images/main/main_5.jpeg');
 }
 .main__bg--sixth{
-    background-image: url('../../images/main/main_6.jpeg');
+    background-image: url('../../../images/main/main_6.jpeg');
 }
 
 .main__title{
@@ -352,19 +352,19 @@
 
 #city__box--first{
     width: calc(100% - ((100% - 40px) / 3) - 20px );
-    background-image: url('../../images/main/city_sydeny.jpg');
+    background-image: url('../../../images/main/city_sydeny.jpg');
 }
 #city__box--second{
-    background-image: url('../../images/main/city_melbourne.jpg');
+    background-image: url('../../../images/main/city_melbourne.jpg');
 }
 #city__box--third{
-    background-image: url('../../images/main/city_brisbane.jpg');
+    background-image: url('../../../images/main/city_brisbane.jpg');
 }
 #city__box--fourth{
-    background-image: url('../../images/main/city_canberra.jpg');
+    background-image: url('../../../images/main/city_canberra.jpg');
 }
 #city__box--fifth{
-    background-image: url('../../images/main/city_Perth.jpg');
+    background-image: url('../../../images/main/city_Perth.jpg');
 }
 .city__box--korean{
     color:var(--white);
@@ -452,14 +452,14 @@
     width: 100%;
     height: 0px;
     padding-top:66%;
-    background-image:url('../../images/main/natural_animal.jpg');
+    background-image:url('../../../images/main/natural_animal.jpg');
 }
 #natural__box--picture-second{
-    background-image:url('../../images/main/natural_ocean.jpg');
+    background-image:url('../../../images/main/natural_ocean.jpg');
 }
 #natural__box--picture-third{
     background-position: center top;
-    background-image:url('../../images/main/natural_desert.jpg');
+    background-image:url('../../../images/main/natural_desert.jpg');
     margin-top:50px;
 }
 .natural__box{
@@ -600,22 +600,22 @@
 
 
   .recommend__bg--first{
-    background-image: url('../../images/main/recommend_first.jpg');
+    background-image: url('../../../images/main/recommend_first.jpg');
   }
   .recommend__bg--second{
-    background-image: url('../../images/main/recommend_second.jpg');
+    background-image: url('../../../images/main/recommend_second.jpg');
   }
   .recommend__bg--third{
-    background-image: url('../../images/main/recommend_third.jpg');
+    background-image: url('../../../images/main/recommend_third.jpg');
   }
   .recommend__bg--fourth{
-    background-image: url('../../images/main/recommend_fourth.jpg');
+    background-image: url('../../../images/main/recommend_fourth.jpg');
   }
   .recommend__bg--fifth{
-    background-image: url('../../images/main/recommend_fifth.jpg');
+    background-image: url('../../../images/main/recommend_fifth.jpg');
   }
   .recommend__bg--sixth{
-    background-image: url('../../images/main/recommend_sixth.jpg');
+    background-image: url('../../../images/main/recommend_sixth.jpg');
   }
 
   /*food*/
@@ -663,16 +663,16 @@
     box-shadow: var(--box-shadow);
   }
   #food__type--first{
-    background-image:url('../../images/main/food_first.jpg') ;
+    background-image:url('../../../images/main/food_first.jpg') ;
   }
   #food__type--second{
-    background-image:url('../../images/main/food_second.jpg') ;
+    background-image:url('../../../images/main/food_second.jpg') ;
   }
   #food__type--third{
-    background-image:url('../../images/main/food_third.jpg') ;
+    background-image:url('../../../images/main/food_third.jpg') ;
   }
   #food__type--fourth{
-    background-image:url('../../images/main/food_fourth.jpg') ;
+    background-image:url('../../../images/main/food_fourth.jpg') ;
   }
 
   .food__content{
@@ -693,16 +693,16 @@
     opacity:1;
   }
   #food__content--first{
-    background-image:url('../../images/main/food_first.jpg') ;
+    background-image:url('../../../images/main/food_first.jpg') ;
   }
   #food__content--second{
-    background-image:url('../../images/main/food_second.jpg') ;
+    background-image:url('../../../images/main/food_second.jpg') ;
   }
   #food__content--third{
-    background-image:url('../../images/main/food_third.jpg') ;
+    background-image:url('../../../images/main/food_third.jpg') ;
   }
   #food__content--fourth{
-    background-image:url('../../images/main/food_fourth.jpg') ;
+    background-image:url('../../../images/main/food_fourth.jpg') ;
   }
 
   
@@ -764,7 +764,7 @@
 .district__bg{
   width: 100%;
   height: 810px;
-  background-image: url('../../images/main/district.jpg');
+  background-image: url('../../../images/main/district.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0px;
@@ -1049,6 +1049,11 @@ hr{
 .today__now{
   margin-right:10px;
 }
+.time__dtc{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #weather__summertime--dtc{
   transform: translateY(-2px);
   font-size: 30px;
@@ -1069,6 +1074,8 @@ hr{
 
 .weather__load{
   margin-top:24px;
+  margin-bottom: 32px;
+
   width: var(--main-title);
   height: var(--main-title);
 }

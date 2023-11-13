@@ -267,7 +267,9 @@
     .time__now {
         width: 125px;
     }
-
+    #weather__summertime--dtc{
+        font-size: 24px;
+    }
     .title__info {
         width: 100%;
     }
@@ -286,7 +288,12 @@
         margin-top: 0px;
     }
     .weather__load{
-        font-size: 28px;
+        margin-bottom: 0px;
+        width: 33px;
+        height: 30px;
+    }
+    .weather__load span{
+        font-size: 32px;
     }
 }
 

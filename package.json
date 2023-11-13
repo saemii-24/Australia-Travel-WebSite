@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": ":raised_hands:안녕하세요! **걸어서 호주 속**으로 팀입니다.  \r 이 프로젝트는 <u>'여행 사이트' 제작</u>을 목표로, 3명의 팀원이 함께 제작한 프로젝트로<br/>\r 총 3개의 페이지로 이루어져 있으며, 팀원 한 명당 한 페이지를 담당했습니다.\r <br/>",
   "scripts": {
-    "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html",
-    "vercel": "vercel dev"
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "dev": "netlify dev",
+    "deploy": "netlify deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.10.1",
-    "vercel": "^32.5.0"
-  },
-  "dependencies": {
-    "node-fetch": "^2.7.0"
+    "netlify-cli": "^17.2.2",
+    "snowpack": "^3.8.8"
   }
 }

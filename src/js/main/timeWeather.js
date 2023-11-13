@@ -1,16 +1,12 @@
-/*Luxon 라이브러리*/
-/*호주 시간 계산하기*/
-/*버튼 클릭시 각 도시의 시간을 보여준다.
-멜버른 / 시드니 / 브리즈번 모두 UTC+10
-서머타임 시행시 UTC+11, 브리즈번은 서머타임 미시행이며,
-시행시 서머타임 아이콘을 보여준다.*/
+// /*Luxon 라이브러리*/
+// /*호주 시간 계산하기*/
+// /*버튼 클릭시 각 도시의 시간을 보여준다.
+// 멜버른 / 시드니 / 브리즈번 모두 UTC+10
+// 서머타임 시행시 UTC+11, 브리즈번은 서머타임 미시행이며,
+// 시행시 서머타임 아이콘을 보여준다.*/
 
-const sydneyTimeZone = "Australia/Sydney";
-const melbourneTimeZone = "Australia/Melbourne";
-const brisbaneTimeZone = "Australia/Brisbane";
-
-//초단위로 업데이트 됨.
-//서머타임 시행시 브리즈번 버튼 클릭 이벤트에서 오류 발생으로 수정//
+// //초단위로 업데이트 됨.
+// //서머타임 시행시 브리즈번 버튼 클릭 이벤트에서 오류 발생으로 수정//
 
 function callAusTimeObj(cityTimeZone) {
   //도시 시간대(기본정보) 불러오기
@@ -65,17 +61,24 @@ function callAusTimeObj(cityTimeZone) {
     isCityDST = "";
   }
 
-  document.getElementById("time__now--australia").innerText = cityTimeNow;
-  document.getElementById("time__merdiem--australia").innerText = cityMeridiem;
-  document.getElementById("today__now--australia").innerText = cityDate;
-  document.getElementById("today__day--australia").innerText = cityDay;
-  document.getElementById("weather__summertime--dtc").innerText = isCityDST;
+  if (cityTimeZone === "Asia/Seoul") {
+    document.getElementById("time__now--korea").innerText = cityTimeNow;
+    document.getElementById("time__merdiem--korea").innerText = cityMeridiem;
+    document.getElementById("today__now--korea").innerText = cityDate;
+    document.getElementById("today__day--korea").innerText = cityDay;
+  } else {
+    document.getElementById("time__now--australia").innerText = cityTimeNow;
+    document.getElementById("time__merdiem--australia").innerText =
+      cityMeridiem;
+    document.getElementById("today__now--australia").innerText = cityDate;
+    document.getElementById("today__day--australia").innerText = cityDay;
+    document.getElementById("weather__summertime--dtc").innerText = isCityDST;
+  }
 }
 
 /*날씨정보 알아오기*/
 
-//날씨별 아이콘 이름
-async function weather(cityName) {
+async function weather(cityId) {
   //정보 불러오기 전 load 표시
   const showLoad = document.querySelector(".weather__load");
   const showTemp = document.querySelector(".weather__temp__australia");
@@ -84,13 +87,18 @@ async function weather(cityName) {
   showLoad.style.display = "block";
   showTemp.style.display = "none";
   showLoadText.innerText = "날씨를 로딩중 입니다.";
-  //서버리스 함수에 요청. city는 req.query로 주게 됨
-  await fetch(`/api/serverless?cityName=${cityName}`)
+
+  //api를 요청한다.
+  await fetch(`/.netlify/functions/api?city=${cityId}`, {
+    method: "POST",
+    body: JSON.stringify({ cityId: cityId }),
+  })
     .then((res) => res.json())
     .then((data) => {
-      // console.log(data);
-      //나라 판별 -> put innerText로 사용될 내용
-      let country = data["sys"]["country"];
+      //나라를 판별한다.
+      //판별된 나라는 innerText의 기준이 된다.
+      let country = data.sys.country;
+      console.log(country);
       switch (country) {
         case "KR":
           country = "korea";
@@ -99,10 +107,9 @@ async function weather(cityName) {
           country = "australia";
           break;
       }
-      // console.log(country);
 
-      //도시 판별
-      let city = data["name"];
+      //도시를 판별한다
+      let city = data.name;
       let putCity = document.getElementById(`weather__city--${country}`);
       switch (city) {
         case "Sydney":
@@ -120,12 +127,11 @@ async function weather(cityName) {
       }
       putCity.innerText = city;
 
-      //날씨 판별
-      let weatherIcon = data["weather"][0]["icon"];
-      // console.log(weatherIcon);
+      //날씨를 판별한다
+      let weatherIcon = data.weather[0].icon;
       let putIcon = document.querySelector(`.weather__icon--${country}`);
 
-      //날씨 아이콘 선택
+      //날씨 아이콘을 선택한다. 선택
       let iconName = "clear_day";
       if (weatherIcon === "01d" || weatherIcon === "01n") {
         iconName = "clear_day";
@@ -147,15 +153,14 @@ async function weather(cityName) {
         iconName = "foggy";
       }
       putIcon.innerText = iconName;
-      // console.log(putIcon);
 
       //온도 넣기
-      let temp = data["main"]["temp"].toFixed(1);
+      let temp = data.main.temp.toFixed(1);
       let putTemp = document.getElementById(`weather__now--${country}`);
       putTemp.innerText = temp;
     })
-    .catch((error) => {
-      console.error("오류가 발생했습니다. 기본값이 출력됩니다.");
+    .catch((err) => {
+      console.log(err);
 
       document.querySelector(".weather__error").innerText =
         "현재 기본값이 출력 중입니다.";
@@ -183,6 +188,7 @@ async function weather(cityName) {
         });
       });
     });
+  //작업이 끝난경우 로딩스피너를 display none
   showLoad.style.display = "none";
   showTemp.style.display = "flex";
 }
@@ -193,12 +199,27 @@ const melbourneBtn = document.getElementById("btn__blur--melbourne");
 const brisbaneBtn = document.getElementById("btn__blur--brisbane");
 const btnAll = document.querySelectorAll(".btn__blur--weather");
 
+//Luxon 각 나라의 TIME ZONE
+const sydneyTimeZone = "Australia/Sydney";
+const melbourneTimeZone = "Australia/Melbourne";
+const brisbaneTimeZone = "Australia/Brisbane";
+const seoulTimeZone = "Asia/Seoul";
+
+//WeatherAPI 각 나라의 ID
+const seoulId = 1835847;
+const sydneyId = 2147714;
+const melbourneId = 2158177;
+const brisbaneId = 7839562;
+
 // load 되면 바로 호출
-weather("seoul");
-weather("sydney");
+weather(seoulId);
+weather(sydneyId);
 // setInterval을 넣고, clearInterval에 사용된다.
 let intervalTime = setInterval(() => {
   callAusTimeObj(sydneyTimeZone);
+}, 200);
+setInterval(() => {
+  callAusTimeObj(seoulTimeZone);
 }, 200);
 
 //버튼 호출
@@ -213,81 +234,23 @@ btnAll.forEach((btn) => {
     //버튼을 클릭하면 clearInterval 하고 진행되어야 한다.
     clearInterval(intervalTime);
     if (e.target.innerText === "시드니") {
-      weather("Sydney, AU");
+      weather(sydneyId);
       intervalTime = setInterval(() => {
         callAusTimeObj(sydneyTimeZone);
       }, 200);
-      q;
+
       //멜버른 버튼 클릭
     } else if (e.target.innerText === "멜버른") {
-      weather("Melbourne, AU");
+      weather(melbourneId);
       intervalTime = setInterval(() => {
         callAusTimeObj(melbourneTimeZone);
       }, 200);
       //브리즈번 버튼 클릭
     } else if (e.target.innerText === "브리즈번") {
-      weather("Brisbane, AU");
+      weather(brisbaneId);
       intervalTime = setInterval(() => {
         callAusTimeObj(brisbaneTimeZone);
       }, 200);
     }
   });
 });
-
-/*시간 계산하기*/
-//한국 시간 계산하기
-function koreaTime() {
-  let koreaDate = new Date();
-  let year = koreaDate.getFullYear();
-  let month = koreaDate.getMonth() + 1;
-  let date = koreaDate.getDate();
-  let day = koreaDate.getDay();
-  let hour = koreaDate.getHours();
-
-  //요일 판별
-  switch (day) {
-    case 0:
-      day = "일요일";
-      break;
-    case 1:
-      day = "월요일";
-      break;
-    case 2:
-      day = "화요일";
-      break;
-    case 3:
-      day = "수요일";
-      break;
-    case 4:
-      day = "목요일";
-      break;
-    case 5:
-      day = "금요일";
-      break;
-    case 6:
-      day = "토요일";
-      break;
-  }
-
-  //포맷맞추기
-  let dateFormat = `${year}.${month >= 10 ? month : "0" + month}.${
-    date >= 10 ? date : "0" + date
-  }.`;
-  document.getElementById("today__now--korea").innerText = dateFormat;
-  document.getElementById("today__day--korea").innerText = day;
-
-  //시간 구하기
-  let timeFormat = new Date().toTimeString().split(" ")[0];
-  document.getElementById("time__now--korea").innerText = timeFormat;
-
-  //오전 오후 확인
-  let putHour = document.getElementById("time__merdiem--korea");
-  if (hour >= 12 && hour < 24) {
-    putHour.innerText = "오후";
-  } else {
-    putHour.innerText = "오전";
-  }
-
-  setTimeout(koreaTime, 200);
-}
-koreaTime();

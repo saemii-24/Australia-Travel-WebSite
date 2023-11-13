@@ -258,4 +258,7 @@
         order:-1;
         margin-top: 0px;
     }
+    .weather__load{
+        margin-bottom: 31px;
+      }
 }

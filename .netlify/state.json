@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Suwon",
+			"country": {
+				"code": "KR",
+				"name": "South Korea"
+			},
+			"subdivision": {
+				"code": "41",
+				"name": "Gyeonggi-do"
+			},
+			"timezone": "Asia/Seoul",
+			"latitude": 37.2872,
+			"longitude": 127.0116
+		},
+		"timestamp": 1699845650744
+	}
+}
