@@ -1,5 +1,5 @@
 # 🌏걸어서 호주 속으로
-####**<a href=https://saemii-24-australia.netlify.app/" target="_blank">:point_right:<u>배포페이지 바로가기</u></a>**
+#### **<a href="https://saemii-24-australia.netlify.app/" target="_blank">:point_right:<u>배포페이지 바로가기</u></a>**
 지브리는 국내에서도 많은 사랑을 받는 애니메이션 제작사 입니다. 지브리는 애니메이션 뿐만 아니라 관련된 다양한 사업을 진행하고있으며, 실제 국내 포털 사이트에서도 지브리 애니메이션의 OST, 
 감독, 성우, 전시회 등 지브리에 관련된 다양한 것들이 함께 검색되는 양상을 보입니다.
 이러한 지브리의 다양한 정보를 한번에 모아 볼 수 있도록 Ghibli World 란 '스튜디오 지브리 사이트'를 기획하게 되었습니다.
