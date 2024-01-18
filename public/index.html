@@ -1,378 +1,477 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>걸어서 호주속으로</title>
+    <link rel="icon" href="./images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>걸어서 호주속으로</title>
-  <link rel="icon" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./_dist_/css/reset.css" />
+    <link rel="stylesheet" href="./_dist_/css/common.css" />
+    <link rel="stylesheet" href="./_dist_/css/main/main1200-.css" />
+    <link rel="stylesheet" href="./_dist_/css/main/main770-1199.css" />
+    <link rel="stylesheet" href="./_dist_/css/main/main-769.css" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./_dist_/css/reset.css" />
-  <link rel="stylesheet" href="./_dist_/css/common.css" />
-  <link rel="stylesheet" href="./_dist_/css/main/main1200-.css" />
-  <link rel="stylesheet" href="./_dist_/css/main/main770-1199.css" />
-  <link rel="stylesheet" href="./_dist_/css/main/main-769.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.1/build/global/luxon.min.js"></script>
 
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.1/build/global/luxon.min.js"></script>
+    <script defer src="./_dist_/js/common.js"></script>
+    <script defer src="./_dist_/js/main/main.js"></script>
+    <script defer src="./_dist_/js/main/timeWeather.js"></script>
+    <script defer src="./_dist_/js/main/mainBackground.js"></script>
+    <script defer src="./_dist_/js/main/animation.js"></script>
+  </head>
 
-  <script defer src="./_dist_/js/common.js"></script>
-  <script defer src="./_dist_/js/main/main.js"></script>
-  <script defer src="./_dist_/js/main/timeWeather.js"></script>
-  <script defer src="./_dist_/js/main/mainBackground.js"></script>
-  <script defer src="./_dist_/js/main/animation.js"></script>
-</head>
-
-<body>
-  <div id="wrap">
-    <div id="menu_wrap">
-      <div class="menu_index">
-        <div class="menu_main">
-          <ul>
-            <li>
-              <a href="./index.html" class="fixed"><span>Home</span></a>
-            </li>
-            <li>
-              <a href="./sub2.html"><span>Sydney</span></a>
-            </li>
-            <li>
-              <a href="./sub.html"><span>Melbourne</span></a>
-            </li>
-            <li>
-              <a href="./sub2.html"><span>Brisbane</span></a>
-            </li>
-            <li>
-              <a href="./sub.html"><span>About</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu_info">
-          <span>CONTACT INFO</span>
-          <br />
-          <br />
-          <p>
-            905, Deogyeong-daero, <br />
-            Paldal-gu, Suwon-si, <br />
-            Gyeonggi-do, <br />
-            Republic of Korea <br />
+  <body>
+    <div id="wrap">
+      <div id="menu_wrap">
+        <div class="menu_index">
+          <div class="menu_main">
+            <ul>
+              <li>
+                <a href="./index.html" class="fixed"><span>Home</span></a>
+              </li>
+              <li>
+                <a href="./sub2.html"><span>Sydney</span></a>
+              </li>
+              <li>
+                <a href="./sub.html"><span>Melbourne</span></a>
+              </li>
+              <li>
+                <a href="./sub2.html"><span>Brisbane</span></a>
+              </li>
+              <li>
+                <a href="./sub.html"><span>About</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu_info">
+            <span>CONTACT INFO</span>
             <br />
-            info@naver.com <br />
             <br />
-            (+82)10 1234 5678
-          </p>
-        </div>
-        <div class="sns">
-          <span>CONNECT WITH US</span>
-          <br />
-          <br />
-          <p><a href="#">Twitter</a></p>
-          <br />
-          <p><a href="#">Facebook</a></p>
-          <br />
-          <p><a href="#">Instagram</a></p>
-        </div>
-      </div>
-    </div>
-    <header>
-      <div class="Menu">
-        <a href="#" class="logo">
-          <img src="./images/logo_white.png" alt="logo_w" />
-        </a>
-        <a class="menu-trigger" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-    </header>
-
-    <!--main-->
-    <div class="main">
-      <div class="inner" id="main__inner">
-        <div class="main__title">
-          <!--JS에서 SPAN태그로 삽입-->
-        </div>
-        <div id="main__bottom">
-          <p id="main__title--sub">대표 관광도시</p>
-          <div class="btn__blur--align">
-            <button class="btn__blur" id="btn__blur--first" onclick="location.href = './sub2.html';">
-              시드니
-            </button>
-            <button class="btn__blur" id="btn__blur--second" onclick="location.href = './sub.html';">
-              멜버른
-            </button>
-            <button class="btn__blur" id="btn__blur--third" onclick="location.href = './sub2.html';">
-              브리즈번
-            </button>
-          </div>
-          <div class="main__bar" id="main__bar--gage"></div>
-          <div class="main__bar" id="main__bar--bg"></div>
-        </div>
-      </div>
-      <div class="main__bg">
-        <div class="main__bg--first"></div>
-        <div class="main__bg--second"></div>
-        <div class="main__bg--third"></div>
-
-        <div class="main__bg--fourth"></div>
-        <div class="main__bg--fifth"></div>
-        <div class="main__bg--sixth"></div>
-      </div>
-    </div>
-
-    <!--CITY-->
-    <div class="city">
-      <div class="inner" id="inner__city">
-        <div class="title to-top">
-          <div class="title__align">
-            <p class="title__small">대표 도시</p>
-            <div class="title__line to-charge delay-1"></div>
-          </div>
-          <p class="title__big">모두가 반할 빛나는 호주의 도시</p>
-        </div>
-
-        <div class="city__picture">
-          <a class="city__box to-right" id="city__box--first" href="./sub2.html">
-            <div class="city__box--cityname">
-              <span class="city__box--korean">시드니</span>
-              <span class="city__box--english">Sydney</span>
-            </div>
-          </a>
-          <a class="city__box to-left" id="city__box--second" href="./sub.html">
-            <div class="city__box--cityname">
-              <span class="city__box--korean">멜버른</span>
-              <span class="city__box--english">Melbourne</span>
-            </div>
-          </a>
-          <a class="city__box to-right" id="city__box--third" href="./sub2.html">
-            <div class="city__box--cityname">
-              <span class="city__box--korean">브리즈번</span>
-              <span class="city__box--english">Brisbane</span>
-            </div>
-          </a>
-          <a class="city__box to-top" id="city__box--fourth" href="./sub.html">
-            <div class="city__box--cityname">
-              <span class="city__box--korean">캔버라</span>
-              <span class="city__box--english">Canberra</span>
-            </div>
-          </a>
-          <a class="city__box to-left" id="city__box--fifth" href="./sub2.html">
-            <div class="city__box--cityname">
-              <span class="city__box--korean">퍼스</span>
-              <span class="city__box--english">Perth</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!--Natural environment-->
-    <div class="natural">
-      <div class="inner" id="natural__inner">
-        <div class="title to-top">
-          <div class="title__align">
-            <p class="title__small">자연과 생태</p>
-            <div class="title__line to-charge delay-1"></div>
-          </div>
-          <p class="title__big">호주의 자연을 즐기는 방법</p>
-        </div>
-        <div class="natural__box--align">
-          <div class="natural__box natural__box--left">
-            <a class="natural__box--picture to-top natural-ani-js" id="natural__box__picture-first"
-              href="javascript:void(0)"></a>
-            <p class="natural__box--title to-top natural-ani-js">
-              야생동물 투어
-            </p>
-            <p class="natural__box--content to-top natural-ani-js">
-              호주에서 살고 있는 다양한 동물을 만날 수 있는 투어
+            <p>
+              905, Deogyeong-daero, <br />
+              Paldal-gu, Suwon-si, <br />
+              Gyeonggi-do, <br />
+              Republic of Korea <br />
+              <br />
+              info@naver.com <br />
+              <br />
+              (+82)10 1234 5678
             </p>
           </div>
-          <div class="natural__box--right">
-            <div class="natural__box">
-              <a class="natural__box--picture to-left" id="natural__box--picture-second" href="javascript:void(0)"></a>
-              <p class="natural__box--title to-left">오션 투어</p>
-              <p class="natural__box--content to-left">
-                호주의 눈부신 바다와 부드러운 모래 사장을 즐길 수 있는 투어
+          <div class="sns">
+            <span>CONNECT WITH US</span>
+            <br />
+            <br />
+            <p><a href="#">Twitter</a></p>
+            <br />
+            <p><a href="#">Facebook</a></p>
+            <br />
+            <p><a href="#">Instagram</a></p>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="Menu">
+          <a href="#" class="logo">
+            <img src="./images/logo_white.png" alt="logo_w" />
+          </a>
+          <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </header>
+
+      <!--main-->
+      <div class="main">
+        <div class="inner" id="main__inner">
+          <div class="main__title">
+            <!--JS에서 SPAN태그로 삽입-->
+          </div>
+          <div id="main__bottom">
+            <p id="main__title--sub">대표 관광도시</p>
+            <div class="btn__blur--align">
+              <button
+                class="btn__blur"
+                id="btn__blur--first"
+                onclick="location.href = './sub2.html';"
+              >
+                시드니
+              </button>
+              <button
+                class="btn__blur"
+                id="btn__blur--second"
+                onclick="location.href = './sub.html';"
+              >
+                멜버른
+              </button>
+              <button
+                class="btn__blur"
+                id="btn__blur--third"
+                onclick="location.href = './sub2.html';"
+              >
+                브리즈번
+              </button>
+            </div>
+            <div class="main__bar" id="main__bar--gage"></div>
+            <div class="main__bar" id="main__bar--bg"></div>
+          </div>
+        </div>
+        <div class="main__bg">
+          <div class="main__bg--first"></div>
+          <div class="main__bg--second"></div>
+          <div class="main__bg--third"></div>
+
+          <div class="main__bg--fourth"></div>
+          <div class="main__bg--fifth"></div>
+          <div class="main__bg--sixth"></div>
+        </div>
+      </div>
+
+      <!--CITY-->
+      <div class="city">
+        <div class="inner" id="inner__city">
+          <div class="title to-top">
+            <div class="title__align">
+              <p class="title__small">대표 도시</p>
+              <div class="title__line to-charge delay-1"></div>
+            </div>
+            <p class="title__big">모두가 반할 빛나는 호주의 도시</p>
+          </div>
+
+          <div class="city__picture">
+            <a
+              class="city__box to-right"
+              id="city__box--first"
+              href="./sub2.html"
+            >
+              <div class="city__box--cityname">
+                <span class="city__box--korean">시드니</span>
+                <span class="city__box--english">Sydney</span>
+              </div>
+            </a>
+            <a
+              class="city__box to-left"
+              id="city__box--second"
+              href="./sub.html"
+            >
+              <div class="city__box--cityname">
+                <span class="city__box--korean">멜버른</span>
+                <span class="city__box--english">Melbourne</span>
+              </div>
+            </a>
+            <a
+              class="city__box to-right"
+              id="city__box--third"
+              href="./sub2.html"
+            >
+              <div class="city__box--cityname">
+                <span class="city__box--korean">브리즈번</span>
+                <span class="city__box--english">Brisbane</span>
+              </div>
+            </a>
+            <a
+              class="city__box to-top"
+              id="city__box--fourth"
+              href="./sub.html"
+            >
+              <div class="city__box--cityname">
+                <span class="city__box--korean">캔버라</span>
+                <span class="city__box--english">Canberra</span>
+              </div>
+            </a>
+            <a
+              class="city__box to-left"
+              id="city__box--fifth"
+              href="./sub2.html"
+            >
+              <div class="city__box--cityname">
+                <span class="city__box--korean">퍼스</span>
+                <span class="city__box--english">Perth</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Natural environment-->
+      <div class="natural">
+        <div class="inner" id="natural__inner">
+          <div class="title to-top">
+            <div class="title__align">
+              <p class="title__small">자연과 생태</p>
+              <div class="title__line to-charge delay-1"></div>
+            </div>
+            <p class="title__big">호주의 자연을 즐기는 방법</p>
+          </div>
+          <div class="natural__box--align">
+            <div class="natural__box natural__box--left">
+              <a
+                class="natural__box--picture to-top natural-ani-js"
+                id="natural__box__picture-first"
+                href="javascript:void(0)"
+              ></a>
+              <p class="natural__box--title to-top natural-ani-js">
+                야생동물 투어
+              </p>
+              <p class="natural__box--content to-top natural-ani-js">
+                호주에서 살고 있는 다양한 동물을 만날 수 있는 투어
               </p>
             </div>
-            <div class="natural__box">
-              <a class="natural__box--picture to-left" id="natural__box--picture-third" href="javascript:void(0)"></a>
-              <p class="natural__box--title to-left">사막 투어</p>
-              <p class="natural__box--content to-left">
-                드넓은 사막이 만들어내는 대자연을 느낄 수 있는 투어
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--recommend-->
-    <div class="recommend">
-      <div class="inner" id="recommend__inner">
-        <div class="title to-top" id="recommend__title">
-          <div class="title__align">
-            <p class="title__small">추천 관광</p>
-            <div class="title__line to-charge"></div>
-          </div>
-          <p class="title__big">호주의 대표적인 즐길거리</p>
-        </div>
-      </div>
-      <div class="swiper mySwiper to-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide recommend__bg--first">
-            <div class="sw__title">퍼빙빌리</div>
-            <div class="sw__content">Puffing Billy Railway</div>
-          </div>
-          <div class="swiper-slide recommend__bg--second">
-            <div class="sw__title" id="sw__title--small">
-              커럼빈 야생동물 보호구역
-            </div>
-            <div class="sw__content" id="sw__content--small">
-              Currumbin Wildlife Sanctuary
-            </div>
-          </div>
-          <div class="swiper-slide recommend__bg--third">
-            <div class="sw__title">로트네스트 아일랜드</div>
-            <div class="sw__content">Rottnest Island</div>
-          </div>
-          <div class="swiper-slide recommend__bg--fourth">
-            <div class="sw__title">울루루</div>
-            <div class="sw__content">Uluru</div>
-          </div>
-          <div class="swiper-slide recommend__bg--fifth">
-            <div class="sw__title">그레이트 베리어 리프</div>
-            <div class="sw__content">Great Barrier Reef</div>
-          </div>
-          <div class="swiper-slide recommend__bg--sixth">
-            <div class="sw__title">시드니 오페라 하우스</div>
-            <div class="sw__content">Sydney Opera House</div>
-          </div>
-        </div>
-      </div>
-      <div class="sw__ailgn">
-        <div class="swiper-pagination"></div>
-        <div class="sw__ailgn--button">
-          <div class="swiper-button-prev">
-            <span class="material-symbols-outlined sw__button">navigate_before</span>
-          </div>
-          <div class="swiper-button-next">
-            <span class="material-symbols-outlined sw__button">navigate_next</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--dessert-->
-    <div class="food">
-      <div class="inner" id="food__inner">
-        <div class="title to-top">
-          <div class="title__align">
-            <p class="title__small">호주 먹거리</p>
-            <div class="title__line to-charge delay-1"></div>
-          </div>
-          <p class="title__big">호주 국민이 사랑하는 현지식</p>
-        </div>
-
-        <div class="food__align">
-          <div class="food__select">
-            <div class="food__type to-top" id="food__type--first"></div>
-            <div class="food__type to-top delay-1" id="food__type--second"></div>
-            <div class="food__type to-top delay-2" id="food__type--third"></div>
-            <div class="food__type to-top delay-3" id="food__type--fourth"></div>
-          </div>
-          <div class="food__show opacityChange delay-1">
-            <div class="food__content active" id="food__content--first">
-              <div class="food__content--all">
-                <div class="food__content--align">
-                  <p class="food__korean">파블로바</p>
-                  <p class="food__english">Pavlova</p>
-                </div>
-                <p class="food__info">
-                  1920년대 유명 무용수인 안나 파블로바를 위해 만든 케이크로,
-                  구운 머랭 위에 생크림과 과일을 올려 겉은 바삭하고 속은
-                  부드러운 것이 특징이며, 호주 국민 디저트 중 하나다.
+            <div class="natural__box--right">
+              <div class="natural__box">
+                <a
+                  class="natural__box--picture to-left"
+                  id="natural__box--picture-second"
+                  href="javascript:void(0)"
+                ></a>
+                <p class="natural__box--title to-left">오션 투어</p>
+                <p class="natural__box--content to-left">
+                  호주의 눈부신 바다와 부드러운 모래 사장을 즐길 수 있는 투어
                 </p>
               </div>
-            </div>
-            <div class="food__content" id="food__content--second">
-              <div class="food__content--all">
-                <div class="food__content--align">
-                  <p class="food__korean">캥거루 스테이크</p>
-                  <p class="food__english">Kangaroo steak</p>
-                </div>
-                <p class="food__info">
-                  캥거루는 개체수 조절을 위해 정부의 주도로 식용화 되었습니다.
-                  다른 육류와 비교했을 때 단백질 함량이 높고 콜레스트롤과
-                  지방함량이 낮아 보양식으로도 사용된다.
-                </p>
-              </div>
-            </div>
-            <div class="food__content" id="food__content--third">
-              <div class="food__content--all">
-                <div class="food__content--align">
-                  <p class="food__korean">미트 파이</p>
-                  <p class="food__english">Meat Pie</p>
-                </div>
-                <p class="food__info">
-                  미트파이는 호주를 대표하는 음식 1위로 선정될 정도로
-                  호주인들이 사랑하는 음식입니다. 파이 안에는 다진 고기와
-                  그레이비를 넣어 만들며 가벼운 식사나 간식으로 즐기기 좋다.
-                </p>
-              </div>
-            </div>
-            <div class="food__content" id="food__content--fourth">
-              <div class="food__content--all">
-                <div class="food__content--align">
-                  <p class="food__korean">래밍턴</p>
-                  <p class="food__english">Lamington</p>
-                </div>
-                <p class="food__info">
-                  호주에서 처음 만들어진 케이크의 일종으로 정사각형 모양의
-                  스펀지 케이크 겉면을 초콜릿 소스로 코팅한 후 코코넛 가루를
-                  뿌려 먹는다.
+              <div class="natural__box">
+                <a
+                  class="natural__box--picture to-left"
+                  id="natural__box--picture-third"
+                  href="javascript:void(0)"
+                ></a>
+                <p class="natural__box--title to-left">사막 투어</p>
+                <p class="natural__box--content to-left">
+                  드넓은 사막이 만들어내는 대자연을 느낄 수 있는 투어
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--district-->
-    <div class="district">
-      <div class="inner" id="district__inner">
-        <div class="title to-top">
-          <div class="title__align">
-            <p class="title__small">호주 더 알아보기</p>
-            <div class="title__line to-charge delay-1"></div>
+      <!--recommend-->
+      <div class="recommend">
+        <div class="inner" id="recommend__inner">
+          <div class="title to-top" id="recommend__title">
+            <div class="title__align">
+              <p class="title__small">추천 관광</p>
+              <div class="title__line to-charge"></div>
+            </div>
+            <p class="title__big">호주의 대표적인 즐길거리</p>
           </div>
-          <p class="title__big">호주의 행정구역(주)</p>
+        </div>
+        <div class="swiper mySwiper to-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide recommend__bg--first">
+              <div class="sw__title">퍼빙빌리</div>
+              <div class="sw__content">Puffing Billy Railway</div>
+            </div>
+            <div class="swiper-slide recommend__bg--second">
+              <div class="sw__title" id="sw__title--small">
+                커럼빈 야생동물 보호구역
+              </div>
+              <div class="sw__content" id="sw__content--small">
+                Currumbin Wildlife Sanctuary
+              </div>
+            </div>
+            <div class="swiper-slide recommend__bg--third">
+              <div class="sw__title">로트네스트 아일랜드</div>
+              <div class="sw__content">Rottnest Island</div>
+            </div>
+            <div class="swiper-slide recommend__bg--fourth">
+              <div class="sw__title">울루루</div>
+              <div class="sw__content">Uluru</div>
+            </div>
+            <div class="swiper-slide recommend__bg--fifth">
+              <div class="sw__title">그레이트 베리어 리프</div>
+              <div class="sw__content">Great Barrier Reef</div>
+            </div>
+            <div class="swiper-slide recommend__bg--sixth">
+              <div class="sw__title">시드니 오페라 하우스</div>
+              <div class="sw__content">Sydney Opera House</div>
+            </div>
+          </div>
+        </div>
+        <div class="sw__ailgn">
+          <div class="swiper-pagination"></div>
+          <div class="sw__ailgn--button">
+            <div class="swiper-button-prev">
+              <span class="material-symbols-outlined sw__button"
+                >navigate_before</span
+              >
+            </div>
+            <div class="swiper-button-next">
+              <span class="material-symbols-outlined sw__button"
+                >navigate_next</span
+              >
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="full_inner">
-        <div class="inner" id="district__bg--inner">
-          <div class="district__map--name opacityChange">
-            <span class="district__map--name--info district__map--name--Western_Australia">웨스턴 오스트레일리아</span>
-            <span class="district__map--name--info district__map--name--Northern_Territory">(노던 준주)</span>
-            <span class="district__map--name--info district__map--name--Queensland">퀸즐랜드</span>
-            <span class="district__map--name--info district__map--name--South_Australia">사우스 오스트레일리아</span>
-            <span class="district__map--name--info district__map--name--New_South_Wales">뉴사우스웨일즈</span>
-            <span class="district__map--name--info district__map--name--Victoria">빅토리아</span>
-            <span class="district__map--name--info district__map--name--Tasmania">테즈메이니아</span>
+      <!--dessert-->
+      <div class="food">
+        <div class="inner" id="food__inner">
+          <div class="title to-top">
+            <div class="title__align">
+              <p class="title__small">호주 먹거리</p>
+              <div class="title__line to-charge delay-1"></div>
+            </div>
+            <p class="title__big">호주 국민이 사랑하는 현지식</p>
           </div>
-          <div class="district__map opacityChange">
-            <!--district__map-->
-            <svg version="1.1" id="australia" x="0px" y="0px" viewBox="0 0 661 661">
-              <path id="Tasmania" class="district__map--js district__map--australia" d="M509.62,568.59c-0.42,0.22-0.78,0.52-1.03,0.92c-0.49,0.8-0.42,1.8-0.31,2.73c0.55,4.98,1.56,9.91,2.99,14.71
+
+          <div class="food__align">
+            <div class="food__select">
+              <div class="food__type to-top" id="food__type--first"></div>
+              <div
+                class="food__type to-top delay-1"
+                id="food__type--second"
+              ></div>
+              <div
+                class="food__type to-top delay-2"
+                id="food__type--third"
+              ></div>
+              <div
+                class="food__type to-top delay-3"
+                id="food__type--fourth"
+              ></div>
+            </div>
+            <div class="food__show opacityChange delay-1">
+              <div class="food__content active" id="food__content--first">
+                <div class="food__content--all">
+                  <div class="food__content--align">
+                    <p class="food__korean">파블로바</p>
+                    <p class="food__english">Pavlova</p>
+                  </div>
+                  <p class="food__info">
+                    1920년대 유명 무용수인 안나 파블로바를 위해 만든 케이크로,
+                    구운 머랭 위에 생크림과 과일을 올려 겉은 바삭하고 속은
+                    부드러운 것이 특징이며, 호주 국민 디저트 중 하나다.
+                  </p>
+                </div>
+              </div>
+              <div class="food__content" id="food__content--second">
+                <div class="food__content--all">
+                  <div class="food__content--align">
+                    <p class="food__korean">캥거루 스테이크</p>
+                    <p class="food__english">Kangaroo steak</p>
+                  </div>
+                  <p class="food__info">
+                    캥거루는 개체수 조절을 위해 정부의 주도로 식용화 되었습니다.
+                    다른 육류와 비교했을 때 단백질 함량이 높고 콜레스트롤과
+                    지방함량이 낮아 보양식으로도 사용된다.
+                  </p>
+                </div>
+              </div>
+              <div class="food__content" id="food__content--third">
+                <div class="food__content--all">
+                  <div class="food__content--align">
+                    <p class="food__korean">미트 파이</p>
+                    <p class="food__english">Meat Pie</p>
+                  </div>
+                  <p class="food__info">
+                    미트파이는 호주를 대표하는 음식 1위로 선정될 정도로
+                    호주인들이 사랑하는 음식입니다. 파이 안에는 다진 고기와
+                    그레이비를 넣어 만들며 가벼운 식사나 간식으로 즐기기 좋다.
+                  </p>
+                </div>
+              </div>
+              <div class="food__content" id="food__content--fourth">
+                <div class="food__content--all">
+                  <div class="food__content--align">
+                    <p class="food__korean">래밍턴</p>
+                    <p class="food__english">Lamington</p>
+                  </div>
+                  <p class="food__info">
+                    호주에서 처음 만들어진 케이크의 일종으로 정사각형 모양의
+                    스펀지 케이크 겉면을 초콜릿 소스로 코팅한 후 코코넛 가루를
+                    뿌려 먹는다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--district-->
+      <div class="district">
+        <div class="inner" id="district__inner">
+          <div class="title to-top">
+            <div class="title__align">
+              <p class="title__small">호주 더 알아보기</p>
+              <div class="title__line to-charge delay-1"></div>
+            </div>
+            <p class="title__big">호주의 행정구역(주)</p>
+          </div>
+        </div>
+
+        <div class="full_inner">
+          <div class="inner" id="district__bg--inner">
+            <div class="district__map--name opacityChange">
+              <span
+                class="district__map--name--info district__map--name--Western_Australia"
+                >웨스턴 오스트레일리아</span
+              >
+              <span
+                class="district__map--name--info district__map--name--Northern_Territory"
+                >(노던 준주)</span
+              >
+              <span
+                class="district__map--name--info district__map--name--Queensland"
+                >퀸즐랜드</span
+              >
+              <span
+                class="district__map--name--info district__map--name--South_Australia"
+                >사우스 오스트레일리아</span
+              >
+              <span
+                class="district__map--name--info district__map--name--New_South_Wales"
+                >뉴사우스웨일즈</span
+              >
+              <span
+                class="district__map--name--info district__map--name--Victoria"
+                >빅토리아</span
+              >
+              <span
+                class="district__map--name--info district__map--name--Tasmania"
+                >테즈메이니아</span
+              >
+            </div>
+            <div class="district__map opacityChange">
+              <!--district__map-->
+              <svg
+                version="1.1"
+                id="australia"
+                x="0px"
+                y="0px"
+                viewBox="0 0 661 661"
+              >
+                <path
+                  id="Tasmania"
+                  class="district__map--js district__map--australia"
+                  d="M509.62,568.59c-0.42,0.22-0.78,0.52-1.03,0.92c-0.49,0.8-0.42,1.8-0.31,2.73c0.55,4.98,1.56,9.91,2.99,14.71
                                 c1.14,3.81,2.62,7.67,5.44,10.49c1.87,1.88,4.34,3.33,5.34,5.79c0.29,0.71,0.24,1.8-0.52,1.93c-0.64,0.11-1.28-0.53-1.78-0.84
                                 c-0.66-0.42-1.32-0.84-1.98-1.26c-0.5-0.32-0.98,0.08-1.03,0.63c-0.02,0.23,0.02,0.45,0.07,0.67c0.35,1.61,0.89,3.17,1.55,4.68
                                 c0.48,1.09,1.01,2.15,1.59,3.19c0.58,1.05,1.21,2.07,1.86,3.08c0.65,1.01,1.32,2,2,2.99c0.17,0.25,0.34,0.49,0.51,0.74
@@ -384,9 +483,13 @@
                                 c-1.27-5.47-1.31-11.22-0.11-16.7c0.24-1.11,0.59-2.29,1.49-2.99c1.08-0.83,2.74-0.77,3.58-1.85c0.63-0.81,0.53-1.95,0.41-2.97
                                 c-0.84-6.66-1.65-13.51,0.06-20c0.28-1.07,0.61-2.28,0-3.2c-0.39-0.58-1.07-0.9-1.74-1.1c-3.32-1.02-6.94-0.13-10.13,1.25
                                 c-3.19,1.38-6.18,3.25-9.49,4.3c-6.38,2.02-13.46,0.8-19.48-2.1c-4.62-2.23-9.22-5.52-14.32-4.97
-                                C510.79,568.16,510.16,568.31,509.62,568.59z" />
+                                C510.79,568.16,510.16,568.31,509.62,568.59z"
+                />
 
-              <path id="Western_Australia" class="district__map--js district__map--australia active" d="M250.18,94.33c-3.47-0.23-5.25,4.12-5.8,6.69c0.23,0.76,0.29,1.3,0.04,1.69
+                <path
+                  id="Western_Australia"
+                  class="district__map--js district__map--australia active"
+                  d="M250.18,94.33c-3.47-0.23-5.25,4.12-5.8,6.69c0.23,0.76,0.29,1.3,0.04,1.69
                                 c-0.3,0.47-0.32-0.38-0.04-1.69c-0.59-1.92-2.38-5.27-3.63-11.41c-1.75-8.56-10.66-8.39-13.28-12.23c-2.62-3.84-9.78,2.1-11.35,6.64
                                 c-1.57,4.54-8.21,5.59-14.67,5.76c-6.46,0.17-2.27,7.86-6.29,7.86c-4.02,0,2.27,6.29-4.72,6.11c-6.99-0.17,1.22,14.32,0,17.12
                                 c-1.22,2.79-9.08-2.1-16.07-3.49c-6.99-1.4,0.7,8.04-0.17,13.98c-0.87,5.94-2.91,6.99-7.1,0c-4.19-6.99,2.79-17.93-10.71-3.73
@@ -402,9 +505,13 @@
                                 c6.52,1.16-0.93-6.99,8.85-9.08c9.78-2.1,19.8-7.57,29.11-3.96c9.32,3.61,8.85,6.41,16.3,3.96c7.45-2.45,5.82-0.12,12.34-1.05
                                 c6.52-0.93,10.83-4.31,11.06-8.27c0.23-3.96,1.1-4.63,1.71-5.97c0.41-0.89,1.15-3.36,5.98-4.39c6.11-1.31,8.82-5.33,13.54-6.99
                                 c4.72-1.66,5.68-6.11,10.48-6.64c4.8-0.52,16.16,2.01,20.96,0.17c4.22-1.61,18.72-9.47,26.87-11.37V97.19
-                                C256.02,95.8,253.29,94.53,250.18,94.33z" />
+                                C256.02,95.8,253.29,94.53,250.18,94.33z"
+                />
 
-              <path id="South_Australia" class="district__map--js district__map--australia" d="M257.92,279.03v109.45c1.14-0.27,2.15-0.42,3-0.42c6.9,0,13.01-2.36,19.04-1.92
+                <path
+                  id="South_Australia"
+                  class="district__map--js district__map--australia"
+                  d="M257.92,279.03v109.45c1.14-0.27,2.15-0.42,3-0.42c6.9,0,13.01-2.36,19.04-1.92
                                 c2.87,0.21,5.81,0.78,8.69,0.27c1.91-0.34,3.02-2.08,4.89-1.63c5.53,1.33,10.03,6.4,14.81,9.14c3.67,2.1,4.37-1.31,9.26,0.09
                                 c2.41,0.69,4.13,2.45,6.25,3.67c1.62,0.94,3.17,0.91,4.93,0.43c1.86-0.52,3.6-1.09,5.39,0.01c0.79,0.49,1.43,1.22,1.81,2.07
                                 c0.4,0.88,0.41,1.85,0.99,2.67c0.61,0.87,1.47,0.41,2.34,0.54c0.87,0.13,1.73,0.51,2.35,1.14c0.17,0.18,0.31,0.37,0.42,0.59
@@ -416,9 +523,13 @@
                                 c-0.87,3.55-6.23,0.29-8.27,5.3c-2.04,5.01,2.74,1.4,7.34,0.93c4.6-0.47,5.71-0.29,5.82-3.14c0.12-2.85,2.1-12.58,3.73-13.1
                                 s0.87-6.41,2.5-3.55c1.63,2.85,0.35,6.87,2.15,7.45c1.81,0.58,6.35,3.03,2.15,14.67c-0.73,2.5-8.97,8.01,2.94,7.13
                                 c0,0,5.42-2.68,9.84,1.22c4.43,3.9,11.79,12.9,9.17,24.25c-2.62,11.35,5.42,10.83,7.51,16.25c2.1,5.42,9.43,7.86,12.05,7.34
-                                c0.58-0.12,1.21,0.11,1.86,0.52V279.03H257.92z" />
+                                c0.58-0.12,1.21,0.11,1.86,0.52V279.03H257.92z"
+                />
 
-              <path id="Northern_Territory" class="district__map--australia" d="M396.57,117.04c-4.19-2.97-3.49,2.97-6.64-1.22c-3.14-4.19-6.99-3.84-10.13-2.45
+                <path
+                  id="Northern_Territory"
+                  class="district__map--australia"
+                  d="M396.57,117.04c-4.19-2.97-3.49,2.97-6.64-1.22c-3.14-4.19-6.99-3.84-10.13-2.45
                                 c-3.14,1.4-7.16-8.21-10.13-12.4c-2.97-4.19-4.89-1.05-8.73-7.86c-3.84-6.81,9.08-12.05,7.86-16.07c-1.22-4.02-0.87-4.72,2.1-8.21
                                 c2.97-3.49,5.59,1.75,7.16-2.62c1.57-4.37,3.67-5.76,6.11-10.83c2.45-5.07-1.4-2.97-1.92-2.27c-0.52,0.7-3.32-4.37-8.04-4.37
                                 s0.7,4.54-2.62,6.29c-3.32,1.75-4.72-2.1-6.11-2.62c-1.4-0.52,2.45-6.11,1.05-6.11c-1.4,0-8.39,7.69-8.56,4.37
@@ -428,9 +539,13 @@
                                 c-4.19,5.94,8.39,3.32,4.54,5.76c-2.32,1.48-1.94,4.6-1.03,6.78c0.07,0.14,0.2,0.42-0.02,0.5c-0.32,0.13-1.02-0.73-1.22-0.92
                                 c-0.38-0.39-0.75-0.8-1.13-1.19c-0.03-0.03-0.07-0.07-0.11-0.08c-0.05-0.01-0.11,0.01-0.15,0.04c-0.96,0.53-1.72,1.49-2.58,2.16
                                 c-0.48,0.37-1.59,1.28-2.18,0.63c-0.06-0.07-0.11-0.15-0.14-0.23c-0.35-0.78-1.27-1.78-2.56-2.73v181.84h145.46V125.69
-                                C398.88,123.09,399.65,119.22,396.57,117.04z" />
+                                C398.88,123.09,399.65,119.22,396.57,117.04z"
+                />
 
-              <path id="Queensland" class="district__map--js district__map--australia" d="M651.25,324.96c-0.21-0.7-0.47-1.38-0.89-1.98c-0.51-0.73-1.16-1.03-1.91-1.46
+                <path
+                  id="Queensland"
+                  class="district__map--js district__map--australia"
+                  d="M651.25,324.96c-0.21-0.7-0.47-1.38-0.89-1.98c-0.51-0.73-1.16-1.03-1.91-1.46
                                 c-1.22-0.7-1.69-2.15-2.23-3.37c-0.76-1.76-1.35-3.59-1.88-5.43c-0.62-2.17-1.13-4.37-1.55-6.59c-0.42-2.2-0.76-4.42-0.97-6.65
                                 c-0.17-1.86-0.28-3.75-0.12-5.62c0.05-0.64,0.13-1.28,0.29-1.9c0.51-2.09,1.59-4.47,1.47-6.66c-0.07-1.26-0.87-2.25-1.79-3.04
                                 c-0.47-0.4-0.98-0.77-1.47-1.14c-0.52-0.4-1.07-0.76-1.31-1.4c-0.01-0.03-0.02-0.05-0.03-0.08c-0.18-0.58-0.1-1.2-0.03-1.8
@@ -452,10 +567,13 @@
                                 c1.05,6.9-4.37,4.63-7.07,13.8c-2.71,9.17-1.66,8.04-7.6,12.23c-5.94,4.19-14.85-1.22-20.61-4.54c-5.76-3.32,2.45-7.16-10.48-8.91
                                 c-3.43-0.46-5.71-1.24-7.34-2.17v153.34h48.33v59.34h122.52c0,0,16.6-12.75,35.11,1.05c18.52,13.8,9.78-5.42,19.39-5.59
                                 c9.61-0.17,15.37,2.62,21.66-1.75c0.58-0.4,1.1-0.73,1.58-1.03c0-0.28,0.02-0.55,0.01-0.85
-                                C651.94,328.43,651.77,326.67,651.25,324.96z" />
+                                C651.94,328.43,651.77,326.67,651.25,324.96z"
+                />
 
-              <path id="Victoria" class="district__map--js district__map--australia"
-                d="M555.01,473.4c-2.33-5.94-16.42-0.93-26.67-0.47c-10.25,0.47-14.09-8.5-14.79-6.64
+                <path
+                  id="Victoria"
+                  class="district__map--js district__map--australia"
+                  d="M555.01,473.4c-2.33-5.94-16.42-0.93-26.67-0.47c-10.25,0.47-14.09-8.5-14.79-6.64
                                 c-5.82,8.97-9.78,4.54-14.32-4.31c-4.54-8.85-1.86-6.17-8.62-8.5c-6.75-2.33-1.63-10.13-10.6-12.46
                                 c-8.97-2.33-0.23-11.41-13.51-10.71c-6.14,0.32-11.15-1.5-14.79-3.66v87.45c2.32,1.45,4.9,5.3,6.17,5.3c1.63,0,4.77-3.84,8.62-1.75
                                 c3.84,2.1,6.99,1.4,8.39,2.1s14.79,10.48,16.07,8.5c1.28-1.98,3.96-1.51,5.47-2.91c2.69-2.48,5.06-6.85,8.75-7.91
@@ -463,9 +581,13 @@
                                 c-1.09-0.54-2.41-0.25-3.59-0.56c-0.23-0.06-0.47-0.16-0.6-0.36c-0.28-0.44,0.13-0.99,0.53-1.32c1.72-1.42,5.1-3.39,7.39-2.36
                                 c0.93,0.41,1.7,1.37,2.1,2.29c1.19,2.68-1.65,4.71-3.65,5.85c-6.41,3.61,4.86,5.91,5.74,3.2c0.87-2.71,5.15-9.26,5.68-5.33
                                 c0.52,3.93-2.88,5.24,1.4,7.34c4.28,2.1,2.71,5.76,5.33,5.76c2.62,0,2.18-3.06,8.53-3.12c6.35-0.06,13.51-18.34,24.46-17.88
-                                c6.83,0.29,15.74-0.05,21.48-1.26c-6.54-3.79-11.65-11.35-20.2-15.51C549.53,484.81,557.34,479.34,555.01,473.4z" />
+                                c6.83,0.29,15.74-0.05,21.48-1.26c-6.54-3.79-11.65-11.35-20.2-15.51C549.53,484.81,557.34,479.34,555.01,473.4z"
+                />
 
-              <path id="New_South_Wales" class="district__map--js district__map--australia" d="M650.39,332.08c-6.29,4.37-12.05,1.57-21.66,1.75c-9.61,0.17-0.87,19.39-19.39,5.59
+                <path
+                  id="New_South_Wales"
+                  class="district__map--js district__map--australia"
+                  d="M650.39,332.08c-6.29,4.37-12.05,1.57-21.66,1.75c-9.61,0.17-0.87,19.39-19.39,5.59
                                 c-18.52-13.8-35.11-1.05-35.11-1.05H451.71v88.29c3.65,2.15,8.65,3.98,14.79,3.66c13.28-0.7,4.54,8.39,13.51,10.71
                                 c8.97,2.33,3.84,10.13,10.6,12.46c6.75,2.33,4.08-0.35,8.62,8.5c4.54,8.85,8.5,13.28,14.32,4.31c0.7-1.86,4.54,7.1,14.79,6.64
                                 c10.25-0.47,24.34-5.47,26.67,0.47c2.33,5.94-5.47,11.41,8.15,18.05c8.55,4.17,13.66,11.73,20.2,15.51
@@ -473,197 +595,267 @@
                                 c-3.49-7.45,10.54-20.03,11.53-25.39c0.99-5.36-0.23-12.05,4.31-16.89c4.54-4.83,9.32-18.23,10.02-21.49
                                 c0.7-3.26,7.16-4.83,9.43-8.15c2.27-3.32,3.67-15.9,7.8-15.9s3.9-20.32,4.43-23.7c0.44-2.83,1.6-5.63,2.49-8.35
                                 c1.2-3.67,2.69-7.43,3.25-11.26c0.24-1.63,0.39-3.29,0.84-4.88c0.64-2.27,1.85-4.31,2.85-6.43c0.92-1.97,1.22-3.79,1.24-5.87
-                                C651.48,331.35,650.97,331.68,650.39,332.08z" />
-            </svg>
-          </div>
-          <div class="district__content to-top">
-            <!--기본 틀을 제외한 나머지는 JS-->
-            <p class="district__content--korean district__info--js">
-              웨스턴 오스트레일리아
-            </p>
-            <p class="district__content--english district__info--js">
-              Western Australia
-            </p>
-            <div class="district__info">
-              <span class="district__content--bold">주도: &nbsp;</span>
-              <span class="district__content--regular district__info--js">퍼스</span><br />
-              <span class="district__content--bold">인구: &nbsp;</span>
-              <span class="district__content--regular district__info--js">2,296,411명</span><br />
-              <span class="district__content--bold">면적: &nbsp;</span>
-              <span class="district__content--regular district__info--js">2,645,615km²</span><br />
-              <span class="district__content--bold">시간대: &nbsp;</span>
-              <span class="district__content--regular district__info--js">UTC +8 / UTC+8:45</span><br />
+                                C651.48,331.35,650.97,331.68,650.39,332.08z"
+                />
+              </svg>
             </div>
-            <button id="district__btn" class="btn btn--white">
-              더 알아보기
-              <span class="btn__span btn__span--white material-symbols-outlined">chevron_right</span>
+            <div class="district__content to-top">
+              <!--기본 틀을 제외한 나머지는 JS-->
+              <p class="district__content--korean district__info--js">
+                웨스턴 오스트레일리아
+              </p>
+              <p class="district__content--english district__info--js">
+                Western Australia
+              </p>
+              <div class="district__info">
+                <span class="district__content--bold">주도: &nbsp;</span>
+                <span class="district__content--regular district__info--js"
+                  >퍼스</span
+                ><br />
+                <span class="district__content--bold">인구: &nbsp;</span>
+                <span class="district__content--regular district__info--js"
+                  >2,296,411명</span
+                ><br />
+                <span class="district__content--bold">면적: &nbsp;</span>
+                <span class="district__content--regular district__info--js"
+                  >2,645,615km²</span
+                ><br />
+                <span class="district__content--bold">시간대: &nbsp;</span>
+                <span class="district__content--regular district__info--js"
+                  >UTC +8 / UTC+8:45</span
+                ><br />
+              </div>
+              <button id="district__btn" class="btn btn--white">
+                더 알아보기
+                <span
+                  class="btn__span btn__span--white material-symbols-outlined"
+                  >chevron_right</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="district__bg to-top-bg"></div>
+        </div>
+      </div>
+
+      <!--weather-->
+      <div class="weather">
+        <div class="inner" id="weather__inner">
+          <div class="title to-top title__weather">
+            <div class="title__align">
+              <p class="title__small">날씨&middot;시간 정보</p>
+              <div
+                class="title__line--weather title__line to-charge delay-1"
+              ></div>
+            </div>
+            <p class="title__big">지금 호주는?</p>
+          </div>
+          <p class="title__info to-top delay-1">
+            도시 이름 옆에
+            <span id="weather__summertime" class="material-symbols-outlined"
+              >sunny</span
+            >표시가 있는 경우 해당 도시는 서머타임(DST) 시행 중입니다. 도시마다
+            적용 여부가 다르므로 여행 시 참고 바랍니다.
+          </p>
+          <div
+            class="btn__blur--align btn__blur--align--weather opacityChange delay-2"
+          >
+            <button
+              class="btn__blur btn__blur--weather active"
+              id="btn__blur--sydney"
+            >
+              시드니
+            </button>
+            <button
+              class="btn__blur btn__blur--weather"
+              id="btn__blur--melbourne"
+            >
+              멜버른
+            </button>
+            <button
+              class="btn__blur btn__blur--weather"
+              id="btn__blur--brisbane"
+            >
+              브리즈번
             </button>
           </div>
-        </div>
-        <div class="district__bg to-top-bg"></div>
-      </div>
-    </div>
 
-    <!--weather-->
-    <div class="weather">
-      <div class="inner" id="weather__inner">
-        <div class="title to-top title__weather">
-          <div class="title__align">
-            <p class="title__small">날씨&middot;시간 정보</p>
-            <div class="title__line--weather title__line to-charge delay-1"></div>
+          <div class="weather__align">
+            <div class="weather__box opacityChange" id="weather__box--korea">
+              <div class="weather__countryname">
+                <span class="weather__icon material-symbols-outlined"
+                  >location_on</span
+                >
+                <span class="weather__country" id="weather__country--korea"
+                  >대한민국, &nbsp;</span
+                >
+                <span id="weather__city--korea">서울</span>
+              </div>
+              <div class="weather__temp">
+                <span class="weather__now" id="weather__now--korea">00.0</span
+                ><span class="celsius">℃</span>
+                <span
+                  class="weather__icon--korea weather__icon--now material-symbols-outlined"
+                  >sunny</span
+                >
+              </div>
+              <hr />
+              <div class="today">
+                <span class="weather__icon material-symbols-outlined"
+                  >calendar_month</span
+                >
+                <span class="today__now" id="today__now--korea"
+                  >0000.00.00.</span
+                >
+                <span class="today__day" id="today__day--korea">월요일</span>
+              </div>
+              <div class="time">
+                <span class="time__merdiem" id="time__merdiem--korea"
+                  >오후</span
+                >
+                <span class="time__now" id="time__now--korea">00:00:00</span>
+              </div>
+            </div>
+            <!--오류 수정-->
+            <div
+              class="weather__box opacityChange"
+              id="weather__box--australia"
+            >
+              <div class="weather__countryname">
+                <span class="weather__icon material-symbols-outlined"
+                  >location_on</span
+                >
+                <span class="weather__country" id="weather__country--australia"
+                  >호주, &nbsp;</span
+                >
+                <span id="weather__city--australia">시드니</span>
+              </div>
+              <div class="weather__temp weather__temp__australia">
+                <span class="weather__now" id="weather__now--australia"
+                  >00.0</span
+                ><span class="celsius">℃</span>
+                <span
+                  class="weather__icon--australia weather__icon--now material-symbols-outlined"
+                  >sunny</span
+                >
+              </div>
+              <div class="weather__load">
+                <span class="weather__load__icon material-symbols-outlined">
+                  progress_activity
+                </span>
+              </div>
+              <hr />
+              <div class="today">
+                <span class="weather__icon material-symbols-outlined"
+                  >calendar_month</span
+                >
+                <span class="today__now" id="today__now--australia"
+                  >0000.00.00.</span
+                >
+                <span class="today__day" id="today__day--australia"
+                  >월요일</span
+                >
+              </div>
+              <div class="time">
+                <span class="time__merdiem" id="time__merdiem--australia"
+                  >오후</span
+                >
+                <span class="time__dtc" id="time__dtc--australia">
+                  <span
+                    id="weather__summertime--dtc"
+                    class="material-symbols-outlined"
+                    >sunny</span
+                  >
+                </span>
+                <span class="time__now" id="time__now--australia"
+                  >00:00:00</span
+                >
+              </div>
+            </div>
+
+            <p class="weather__error opacityChange"></p>
           </div>
-          <p class="title__big">지금 호주는?</p>
         </div>
-        <p class="title__info to-top delay-1">
-          도시 이름 옆에
-          <span id="weather__summertime" class="material-symbols-outlined">sunny</span>표시가 있는 경우 해당 도시는 서머타임(DST) 시행
-          중입니다. 도시마다
-          적용 여부가 다르므로 여행 시 참고 바랍니다.
-        </p>
-        <div class="btn__blur--align btn__blur--align--weather opacityChange delay-2">
-          <button class="btn__blur btn__blur--weather active" id="btn__blur--sydney">
-            시드니
-          </button>
-          <button class="btn__blur btn__blur--weather" id="btn__blur--melbourne">
-            멜버른
-          </button>
-          <button class="btn__blur btn__blur--weather" id="btn__blur--brisbane">
-            브리즈번
-          </button>
-        </div>
+        <video id="weather__bg--js--first" class="weather__bg" muted loop>
+          <source src="./media/weather_bg.mp4" type="video/mp4" />
+        </video>
+        <video id="weather__bg--js--second" class="weather__bg" muted loop>
+          <source src="./media/weather_bg.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-        <div class="weather__align">
-          <div class="weather__box opacityChange" id="weather__box--korea">
-            <div class="weather__countryname">
-              <span class="weather__icon material-symbols-outlined">location_on</span>
-              <span class="weather__country" id="weather__country--korea">대한민국, &nbsp;</span>
-              <span id="weather__city--korea">서울</span>
+      <!--footer-->
+      <footer>
+        <div id="footer_content">
+          <div class="footer_menu1">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms&Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Location</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu2">
+            <ul>
+              <li><a href="#">Our Location</a></li>
+              <li><a href="#">The Hosts</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Restaurant</a></li>
+            </ul>
+          </div>
+          <div class="footer_info">
+            <div class="address">
+              <span>Address:</span>
+              <p>
+                905, Deogyeong-daero, <br />
+                Paldal-gu, Suwon-si, <br />
+                Gyeonggi-do, <br />
+                Republic of Korea
+              </p>
             </div>
-            <div class="weather__temp">
-              <span class="weather__now" id="weather__now--korea">00.0</span><span class="celsius">℃</span>
-              <span class="weather__icon--korea weather__icon--now material-symbols-outlined">sunny</span>
+            <div class="phone">
+              <span>Phone:</span>
+              <p>(+82)10 1234 5678</p>
             </div>
+            <div class="email">
+              <span>Email:</span>
+              <p>info@naver.com</p>
+            </div>
+          </div>
+          <div class="footer_search">
+            <p>Sign up for our newsletter</p>
+            <form class="footer_ch">
+              <input
+                type="text"
+                placeholder="Your E-mail..."
+                name="search"
+                class="search"
+              />
+              <button type="button">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="footer_solid">
             <hr />
-            <div class="today">
-              <span class="weather__icon material-symbols-outlined">calendar_month</span>
-              <span class="today__now" id="today__now--korea">0000.00.00.</span>
-              <span class="today__day" id="today__day--korea">월요일</span>
+          </div>
+          <div class="footer_last">
+            <div class="last_text">
+              <p>
+                Copyright ©2023 All rights reserved | This template is made with
+                &#9829; by 걸어서 호주속으로
+              </p>
             </div>
-            <div class="time">
-              <span class="time__merdiem" id="time__merdiem--korea">오후</span>
-              <span class="time__now" id="time__now--korea">00:00:00</span>
+            <div class="last_icon">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </div>
           </div>
-          <!--오류 수정-->
-          <div class="weather__box opacityChange" id="weather__box--australia">
-            <div class="weather__countryname">
-              <span class="weather__icon material-symbols-outlined">location_on</span>
-              <span class="weather__country" id="weather__country--australia">호주, &nbsp;</span>
-              <span id="weather__city--australia">시드니</span>
-            </div>
-            <div class="weather__temp weather__temp__australia">
-              <span class="weather__now" id="weather__now--australia">00.0</span><span class="celsius">℃</span>
-              <span class="weather__icon--australia weather__icon--now material-symbols-outlined">sunny</span>
-            </div>
-            <div class="weather__load">
-              <span class="weather__load__icon material-symbols-outlined">
-                progress_activity
-              </span>
-            </div>
-            <hr />
-            <div class="today">
-              <span class="weather__icon material-symbols-outlined">calendar_month</span>
-              <span class="today__now" id="today__now--australia">0000.00.00.</span>
-              <span class="today__day" id="today__day--australia">월요일</span>
-            </div>
-            <div class="time">
-              <span class="time__merdiem" id="time__merdiem--australia">오후</span>
-              <span class="time__dtc" id="time__dtc--australia">
-                <span id="weather__summertime--dtc" class="material-symbols-outlined">sunny</span>
-              </span>
-              <span class="time__now" id="time__now--australia">00:00:00</span>
-            </div>
-          </div>
-
-          <p class="weather__error opacityChange"></p>
         </div>
-      </div>
-      <video id="weather__bg--js--first" class="weather__bg" muted loop>
-        <source src="./media/weather_bg.mp4" type="video/mp4" />
-      </video>
-      <video id="weather__bg--js--second" class="weather__bg" muted loop>
-        <source src="./media/weather_bg.mp4" type="video/mp4" />
-      </video>
+      </footer>
     </div>
-
-    <!--footer-->
-    <footer>
-      <div id="footer_content">
-        <div class="footer_menu1">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Terms&Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Location</a></li>
-          </ul>
-        </div>
-        <div class="footer_menu2">
-          <ul>
-            <li><a href="#">Our Location</a></li>
-            <li><a href="#">The Hosts</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Restaurant</a></li>
-          </ul>
-        </div>
-        <div class="footer_info">
-          <div class="address">
-            <span>Address:</span>
-            <p>
-              905, Deogyeong-daero, <br />
-              Paldal-gu, Suwon-si, <br />
-              Gyeonggi-do, <br />
-              Republic of Korea
-            </p>
-          </div>
-          <div class="phone">
-            <span>Phone:</span>
-            <p>(+82)10 1234 5678</p>
-          </div>
-          <div class="email">
-            <span>Email:</span>
-            <p>info@naver.com</p>
-          </div>
-        </div>
-        <div class="footer_search">
-          <p>Sign up for our newsletter</p>
-          <form class="footer_ch">
-            <input type="text" placeholder="Your E-mail..." name="search" class="search" />
-            <button type="button">
-              <i class="fa-regular fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-        <div class="footer_solid">
-          <hr />
-        </div>
-        <div class="footer_last">
-          <div class="last_text">
-            <p>
-              Copyright ©2023 All rights reserved | This template is made with
-              &#9829; by 걸어서 호주속으로
-            </p>
-          </div>
-          <div class="last_icon">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+  </body>
 </html>

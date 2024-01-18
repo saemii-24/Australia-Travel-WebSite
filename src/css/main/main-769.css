@@ -1,417 +1,482 @@
-@media (max-width:769px) {
+@media (max-width: 769px) {
+  /*common*/
+  html {
+    font-size: 3.2px;
+  }
+  #wrap {
+    overflow-x: hidden;
+  }
+  .title {
+    padding-top: 150px;
+    margin-bottom: 80px;
+  }
 
-    /*common*/
-    html {
-        font-size: 3.2px;
-    }
-    #wrap{
-        overflow-x: hidden;
-    }
-    .title {
-        padding-top: 150px;
-        margin-bottom: 80px;
-    }
+  .title__align {
+    gap: 20px;
+  }
 
-    .title__align {
-        gap: 20px;
-    }
+  .title__line {
+    width: 130px;
+    max-width: 130px;
+  }
 
-    .title__line {
-        width: 130px;
-        max-width: 130px;
-    }
+  .title__line.to-charge.back-origin {
+    width: 130px;
+  }
 
-    .title__line.to-charge.back-origin {
-        width: 130px;
-    }
+  .title__big {
+    font-size: 28px;
+    margin-top: 30px;
+  }
 
-    .title__big {
-        font-size: 28px;
-        margin-top: 30px;
-    }
+  /*main*/
+  .btn__blur--align {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    /*main*/
-    .btn__blur--align {
-        width: 100%;
-        justify-content: space-between;
-    }
+  .main__title > span {
+    font-size: 28px;
+  }
 
-    .main__title>span {
-        font-size: 28px;
-    }
+  .btn__blur {
+    height: 40px;
+  }
 
-    .btn__blur {
-        height: 40px;
-    }
+  /*city*/
+  .city__picture {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    /*city*/
-    .city__picture {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .city__box,
+  #city__box--first {
+    width: 100%;
+    height: 40vw;
+  }
 
-    .city__box,
-    #city__box--first {
-        width: 100%;
-        height: 40vw;
-    }
+  .city__box {
+    width: calc(50% - 10px);
+  }
 
-    .city__box {
-        width: calc(50% - 10px);
-    }
+  /*natural*/
+  .natural__box--picture,
+  #natural__box__picture-first {
+    padding-top: 0px;
+    height: 40vw;
+  }
 
-    /*natural*/
-    .natural__box--picture,
-    #natural__box__picture-first {
-        padding-top: 0px;
-        height: 40vw;
-    }
+  .natural__box--align {
+    flex-direction: column;
+    transform: translateY(0px);
+  }
 
-    .natural__box--align {
-        flex-direction: column;
-        transform: translateY(0px);
-    }
+  #natural__inner {
+    margin-bottom: 0px;
+  }
 
-    #natural__inner {
-        margin-bottom: 0px;
-    }
+  .natural__box--left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
-    .natural__box--left {
-        width: 100%;
-        margin-bottom: 50px;
-    }
+  .natural__box--right {
+    width: 100%;
+  }
 
-    .natural__box--right {
-        width: 100%;
-    }
+  .natural__box--content {
+    margin-top: 10px;
+  }
 
-    .natural__box--content {
-        margin-top: 10px;
-    }
+  .natural__box--title {
+    margin-top: 30px;
+  }
 
-    .natural__box--title {
-        margin-top: 30px;
-    }
+  /*recommend*/
+  .swiper {
+    height: 72vw;
+  }
 
-    /*recommend*/
-    .swiper {
-        height: 72vw;
-    }
+  .swiper-slide {
+    width: 28vw !important;
+    padding: 20px;
+  }
 
-    .swiper-slide {
-        width: 28vw !important;
-        padding: 20px;
-    }
+  .sw__title,
+  .sw__content {
+    margin: 0px;
+  }
 
-    .sw__title,
-    .sw__content {
-        margin: 0px;
+  .sw__title {
+    margin-bottom: 10px;
+  }
 
-    }
+  /*food*/
+  .food__align {
+    flex-direction: column;
+  }
 
-    .sw__title {
-        margin-bottom: 10px;
-    }
+  .food__select {
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0px;
+  }
 
-    /*food*/
-    .food__align {
-        flex-direction: column;
-    }
+  .food__type {
+    width: 19vw;
+  }
 
-    .food__select {
-        flex-wrap: nowrap;
-        width: 100%;
-        gap: 0px;
-    }
+  .food__show {
+    height: 80vw;
+  }
 
-    .food__type {
-        width: 19vw;
-    }
+  .food__type::after {
+    width: 20px;
+    height: 20px;
+    top: -5px;
+  }
 
-    .food__show {
-        height: 80vw;
-    }
+  #food__content--third {
+    background-size: 180%;
+  }
+  /*district*/
+  .district__bg {
+    height: calc(100% - 260px);
+    background-size: 500%;
+    background-position: center 0px;
+  }
 
-    .food__type::after {
-        width: 20px;
-        height: 20px;
-        top: -5px;
-    }
+  #district__bg--inner {
+    flex-direction: column;
+    gap: 0px;
+  }
 
-    #food__content--third{
-        background-size: 180%;
-    }
-    /*district*/
-    .district__bg {
-        height: calc(100% - 260px);
-        background-size: 500%;
-        background-position: center 0px;
-    }
+  .district__map,
+  .distric__map--name {
+    width: 100%;
+    height: 100vw;
+  }
 
-    #district__bg--inner {
-        flex-direction: column;
-        gap: 0px;
-    }
+  .distric__map--name {
+    display: block;
+    width: 85%;
+  }
 
-    .district__map,
-    .distric__map--name {
-        width: 100%;
-        height: 100vw;
-    }
+  .distric__map--name > span {
+    display: inline-block;
+  }
 
-    .distric__map--name {
-        display: block;
-        width: 85%;
-    }
+  .distric__map--name--Western_Australia {
+    position: absolute;
+    width: 130px;
+    top: 28vh;
+    bottom: 28vh;
+    left: 5%;
+    transform: translate(0, 0);
+  }
 
-    .distric__map--name>span {
-        display: inline-block;
-    }
+  .district__content {
+    height: 360px;
+    align-content: flex-start;
+    padding: 20px;
+    padding-left: 40px;
+  }
+  #district__btn {
+    width: 150px;
+    height: 50px;
+  }
+  .district__content--korean,
+  .district__content--english {
+    width: 100%;
+    order: 0;
+    font-size: var(--size-s);
+  }
+  .district__info > span {
+    font-size: var(--size-xs);
+  }
+  .district__map--name--Western_Australia,
+  .district__map--name--Northern_Territory,
+  .district__map--name--Queensland,
+  .district__map--name--South_Australia,
+  .district__map--name--New_South_Wales,
+  .district__map--name--Victoria,
+  .district__map--name--Tasmania {
+    transform: translate(0px, 0px);
+  }
+  .district__map--name--Western_Australia {
+    transform: translate(-70%, -190%);
+  }
 
-    .distric__map--name--Western_Australia {
-        position: absolute;
-        width: 130px;
-        top: 28vh;
-        bottom: 28vh;
-        left: 5%;
-        transform: translate(0, 0);
-    }
+  .district__map--name--Northern_Territory {
+    transform: translate(-120%, -900%);
+  }
 
-    .district__content {
-        height: 360px;
-        align-content: flex-start;
-        padding: 20px;
-        padding-left: 40px;
-    }
-    #district__btn{
-        width: 150px;
-        height: 50px;
-    }
-    .district__content--korean,
-    .district__content--english {
-        width: 100%;
-        order: 0;
-        font-size: var(--size-s);
-    }
-    .district__info>span {
-        font-size: var(--size-xs);
-    }
-    .district__map--name--Western_Australia,
-    .district__map--name--Northern_Territory,
-    .district__map--name--Queensland,
-    .district__map--name--South_Australia,
-    .district__map--name--New_South_Wales,
-    .district__map--name--Victoria,
-    .district__map--name--Tasmania    
-    {
-        transform: translate(0px, 0px);
-    }
-    .district__map--name--Western_Australia {
-        transform: translate(-70%, -190%);
-    }
+  .district__map--name--Queensland {
+    transform: translate(90%, -400%);
+  }
 
-    .district__map--name--Northern_Territory {
-        transform: translate(-120%, -900%);
-    }
+  .district__map--name--South_Australia {
+    transform: translate(80%, 0px);
+  }
 
-    .district__map--name--Queensland {
-        transform: translate(90%, -400%);
-    }
+  .district__map--name--New_South_Wales {
+    transform: translate(190%, 300%);
+  }
 
-    .district__map--name--South_Australia {
-        transform: translate(80%, 0px);
-    }
+  .district__map--name--Victoria {
+    transform: translate(120%, 800%);
+  }
 
-    .district__map--name--New_South_Wales {
-        transform: translate(190%, 300%);
-    }
+  .district__map--name--Tasmania {
+    transform: translate(2vw, 40vw);
+  }
+  .district__info {
+    order: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
 
-    .district__map--name--Victoria {
-        transform: translate(120%, 800%);
-    }
+  #district__btn {
+    order: 0;
+    margin-top: 30px;
+  }
 
-    .district__map--name--Tasmania {
-        transform: translate(2vw, 40vw);
-    }
-    .district__info {
-        order: 0;
-        margin-top: 10px;
-        width: 100%;
-    }
+  #district__bg--inner {
+    padding-top: 0px;
+  }
+  .district__map--name {
+    width: 55vw;
+    min-width: 420px;
+    height: 100vw;
+    align-content: center;
+  }
+  /*weather*/
+  .weather__box {
+    padding: 30px;
+  }
 
-    #district__btn {
-        order: 0;
-        margin-top: 30px;
-    }
+  .weather__temp > span,
+  .time span {
+    font-size: 28px;
+  }
 
-    #district__bg--inner {
-        padding-top: 0px;
-        
-    }
-    .district__map--name {
-        width: 55vw;
-        min-width: 420px;
-        height: 100vw;
-        align-content: center;
-    }
-    /*weather*/
-    .weather__box {
-        padding: 30px;
-    }
+  .time__now {
+    width: 125px;
+  }
+  #weather__summertime--dtc {
+    font-size: 24px;
+  }
+  .title__info {
+    width: 100%;
+  }
 
-    .weather__temp>span,
-    .time span {
-        font-size: 28px;
-    }
-
-    .time__now {
-        width: 125px;
-    }
-    #weather__summertime--dtc{
-        font-size: 24px;
-    }
-    .title__info {
-        width: 100%;
-    }
-
-    .title__weather {
-        margin-bottom: 40px;
-    }
-    .today__now {
-        margin-right: 5px;
-    }
-    .btn__blur--align--weather{
-        justify-content: space-between;
-    }
-    .weather__error{
-        order:-1;
-        margin-top: 0px;
-    }
-    .weather__load{
-        margin-bottom: 0px;
-        width: 33px;
-        height: 30px;
-    }
-    .weather__load span{
-        font-size: 32px;
-    }
+  .title__weather {
+    margin-bottom: 40px;
+  }
+  .today__now {
+    margin-right: 5px;
+  }
+  .btn__blur--align--weather {
+    justify-content: space-between;
+  }
+  .weather__error {
+    order: -1;
+    margin-top: 0px;
+  }
+  .weather__load {
+    margin-bottom: 0px;
+    width: 33px;
+    height: 30px;
+  }
+  .weather__load span {
+    font-size: 32px;
+  }
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
+  .district__map--name--Western_Australia {
+    transform: translate(-30%, -50%);
+    width: 120px;
+  }
 
-    .district__map--name--Western_Australia {
-        transform: translate(-30%, -50%);
-        width: 120px;
-    }
-    
-    .district__map--name--Northern_Territory {
-        transform: translate(30%, -780%);
-    }
-    .district__map--name--Queensland {
-        transform: translate(50%, -300%);
-        width: 150px;
-    }
-    .district__map--name--New_South_Wales {
-        transform: translate(140%, 210%);
-        width: 120px;
-    }
-    .district__map--name--South_Australia {
-        transform: translate(120%, -25%);
-        width: 120px;
-    }
-    .district__map--name--Victoria {
-        transform: translate(80%, 550%);
-    }
+  .district__map--name--Northern_Territory {
+    transform: translate(30%, -780%);
+  }
+  .district__map--name--Queensland {
+    transform: translate(50%, -300%);
+    width: 150px;
+  }
+  .district__map--name--New_South_Wales {
+    transform: translate(140%, 210%);
+    width: 120px;
+  }
+  .district__map--name--South_Australia {
+    transform: translate(120%, -25%);
+    width: 120px;
+  }
+  .district__map--name--Victoria {
+    transform: translate(80%, 550%);
+  }
 
-    .district__map--name--Tasmania {
-        transform: translate(-1vw, 39vw);
-    }
+  .district__map--name--Tasmania {
+    transform: translate(-1vw, 39vw);
+  }
 }
 
-@media (max-width:500px) {
-    .district__map--name--Western_Australia,
-    .district__map--name--Northern_Territory,
-    .district__map--name--Queensland,
-    .district__map--name--South_Australia,
-    .district__map--name--New_South_Wales,
-    .district__map--name--Victoria,
-    .district__map--name--Tasmania    
-    {
-        font-size: 13px;
-    }
-    .district__map--name--Western_Australia {
-        transform: translate(-10%, -50%);
-        width: 120px;
-    }
-    
-    .district__map--name--Northern_Territory {
-        transform: translate(30%, -700%);
-        font-size: 10px;
-    }
-    .district__map--name--Queensland {
-        transform: translate(40%, -300%);
-        width: 150px;
-    }
-    .district__map--name--New_South_Wales {
-        transform: translate(120%, 200%);
-        width: 120px;
-    }
-    .district__map--name--South_Australia {
-        transform: translate(115%, -25%);
-        width: 120px;
-    }
-    .district__map--name--Victoria {
-        transform: translate(50%, 550%);
-    }
+@media (max-width: 500px) {
+  .sw__title,
+  #sw__title--small {
+    display: none;
+  }
+  .district__map--name--Western_Australia,
+  .district__map--name--Northern_Territory,
+  .district__map--name--Queensland,
+  .district__map--name--South_Australia,
+  .district__map--name--New_South_Wales,
+  .district__map--name--Victoria,
+  .district__map--name--Tasmania {
+    font-size: 13px;
+  }
+  .district__map--name--Western_Australia {
+    transform: translate(-10%, -50%);
+    width: 120px;
+  }
 
-    .district__map--name--Tasmania {
-        transform: translate(-1vw, 39vw);
-    }
+  .district__map--name--Northern_Territory {
+    transform: translate(30%, -700%);
+    font-size: 10px;
+  }
+  .district__map--name--Queensland {
+    transform: translate(40%, -300%);
+    width: 150px;
+  }
+  .district__map--name--New_South_Wales {
+    transform: translate(120%, 200%);
+    width: 120px;
+  }
+  .district__map--name--South_Australia {
+    transform: translate(115%, -25%);
+    width: 120px;
+  }
+  .district__map--name--Victoria {
+    transform: translate(50%, 550%);
+  }
+
+  .district__map--name--Tasmania {
+    transform: translate(-1vw, 39vw);
+  }
 }
 
-@media (max-width:400px) {
-    .district__bg {
-        height: calc(100% - 325px);
-    }
-    .district__map--name {
-        max-width: 350px;
-    }
-    .district__map--name--Western_Australia,
-    .district__map--name--Northern_Territory,
-    .district__map--name--Queensland,
-    .district__map--name--South_Australia,
-    .district__map--name--New_South_Wales,
-    .district__map--name--Victoria,
-    .district__map--name--Tasmania    
-    {
-        font-size: 12px;
-    }
-    .district__map--name--Western_Australia {
-        transform: translate(50%, -50%);
-        width: 100px;
-    }
-    
-    .district__map--name--Northern_Territory {
-        transform: translate(155%, -600%);
-        font-size: 8px;
-    }
-    .district__map--name--Queensland {
-        transform: translate(70%, -300%);
-        width: 150px;
-    }
-    .district__map--name--New_South_Wales {
-        transform: translate(150%, 150%);
-        width: 120px;
-    }
-    .district__map--name--South_Australia {
-        transform: translate(-136%, 40%);
-        width: 100px;
-    }
-    .district__map--name--Victoria {
-        transform: translate(140%, 470%);
-    }
+@media (max-width: 400px) {
+  .food__info {
+    display: none;
+  }
+  .food__show {
+    height: 48vw;
+  }
+  .food__content--align {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transform: translateY(20px);
+  }
+  .food__korean {
+    font-size: var(--size-l);
+  }
+  .food__english {
+    font-size: var(--size-m);
+  }
 
-    .district__map--name--Tasmania {
-        transform: translate(30%, 39vw);
-    }
+  .city__box--korean {
+    font-size: 18px;
+    bottom: 24%;
+  }
+  .district__bg {
+    height: calc(100% - 325px);
+  }
+  .district__map--name {
+    max-width: 350px;
+  }
+  .district__map--name--Western_Australia,
+  .district__map--name--Northern_Territory,
+  .district__map--name--Queensland,
+  .district__map--name--South_Australia,
+  .district__map--name--New_South_Wales,
+  .district__map--name--Victoria,
+  .district__map--name--Tasmania {
+    font-size: 12px;
+  }
+  .district__map--name--Western_Australia {
+    transform: translate(50%, -50%);
+    width: 100px;
+  }
+
+  .district__map--name--Northern_Territory {
+    transform: translate(155%, -600%);
+    font-size: 8px;
+  }
+  .district__map--name--Queensland {
+    transform: translate(70%, -300%);
+    width: 150px;
+  }
+  .district__map--name--New_South_Wales {
+    transform: translate(150%, 150%);
+    width: 120px;
+  }
+  .district__map--name--South_Australia {
+    transform: translate(-136%, 40%);
+    width: 100px;
+  }
+  .district__map--name--Victoria {
+    transform: translate(140%, 470%);
+  }
+
+  .district__map--name--Tasmania {
+    transform: translate(30%, 39vw);
+  }
+}
+
+@media (max-width: 399px) {
+  .district__bg {
+    height: calc(100% - 325px);
+  }
+  .district__map--name {
+    max-width: 350px;
+  }
+  .district__map--name--Western_Australia,
+  .district__map--name--Northern_Territory,
+  .district__map--name--Queensland,
+  .district__map--name--South_Australia,
+  .district__map--name--New_South_Wales,
+  .district__map--name--Victoria,
+  .district__map--name--Tasmania {
+    font-size: 9px;
+  }
+  .district__map--name--Western_Australia {
+    transform: translate(50%, -50%);
+    width: 85px;
+  }
+
+  .district__map--name--Northern_Territory {
+    transform: translate(190%, -600%);
+  }
+  .district__map--name--Queensland {
+    transform: translate(70%, -300%);
+    width: 150px;
+  }
+  .district__map--name--New_South_Wales {
+    transform: translate(150%, 150%);
+    width: 120px;
+  }
+  .district__map--name--South_Australia {
+    transform: translate(-150%, 40%);
+    width: 85px;
+  }
+  .district__map--name--Victoria {
+    transform: translate(140%, 620%);
+  }
+
+  .district__map--name--Tasmania {
+    transform: translate(30%, 39vw);
+  }
 }
