@@ -214,10 +214,10 @@ const brisbaneId = 7839562;
 weather(seoulId);
 weather(sydneyId);
 // setInterval을 넣고, clearInterval에 사용된다.
-let intervalTime = setInterval(() => {
+let AustraliaIntervalTime = setInterval(() => {
   callAusTimeObj(sydneyTimeZone);
 }, 200);
-setInterval(() => {
+let SeoulIntervalTime = setInterval(() => {
   callAusTimeObj(seoulTimeZone);
 }, 200);
 
@@ -231,24 +231,34 @@ btnAll.forEach((btn) => {
     e.target.classList.add("active");
 
     //버튼을 클릭하면 clearInterval 하고 진행되어야 한다.
-    clearInterval(intervalTime);
+    clearInterval(AustraliaIntervalTime);
+    clearInterval(SeoulIntervalTime);
     if (e.target.innerText === "시드니") {
       weather(sydneyId);
-      intervalTime = setInterval(() => {
+      AustraliaIntervalTime = setInterval(() => {
         callAusTimeObj(sydneyTimeZone);
+      }, 200);
+      SeoulIntervalTime = setInterval(() => {
+        callAusTimeObj(seoulTimeZone);
       }, 200);
 
       //멜버른 버튼 클릭
     } else if (e.target.innerText === "멜버른") {
       weather(melbourneId);
-      intervalTime = setInterval(() => {
+      AustraliaIntervalTime = setInterval(() => {
         callAusTimeObj(melbourneTimeZone);
+      }, 200);
+      SeoulIntervalTime = setInterval(() => {
+        callAusTimeObj(seoulTimeZone);
       }, 200);
       //브리즈번 버튼 클릭
     } else if (e.target.innerText === "브리즈번") {
       weather(brisbaneId);
-      intervalTime = setInterval(() => {
+      AustraliaIntervalTime = setInterval(() => {
         callAusTimeObj(brisbaneTimeZone);
+      }, 200);
+      SeoulIntervalTime = setInterval(() => {
+        callAusTimeObj(seoulTimeZone);
       }, 200);
     }
   });
