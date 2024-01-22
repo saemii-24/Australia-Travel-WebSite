@@ -28,7 +28,8 @@
   </tr>
   <tr>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/adea7b9d-8385-4a6f-844c-7f2b01afc7da" alt="메인화면 문장·이미지 전환"></td>
-    <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/17dde52f-74fc-45c0-b7a8-f58ce38305ba" alt="SVG와 데이터를 이용한 지도"></td>
+    <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/1877fef5-9f2d-4584-b4f2-22b691da7f11" alt="서울&호주 날씨·시간 보드"></td>
+   
   </tr>
 </table>
 
@@ -39,7 +40,7 @@
   </tr>
   <tr>
     <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/b90bad23-9f0b-45e1-b182-0f9d6f91bcae" alt="swiper 슬라이드"></td>
-    <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/1877fef5-9f2d-4584-b4f2-22b691da7f11" alt="서울&호주 날씨·시간 보드"></td>
+     <td><img style="width:300px" src="https://github.com/saemii-24/project_2/assets/139088277/17dde52f-74fc-45c0-b7a8-f58ce38305ba" alt="SVG와 데이터를 이용한 지도"></td>
   </tr>
 </table>
 
